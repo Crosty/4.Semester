@@ -1,0 +1,10 @@
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\bin\Debug\Personkartotek.DB.dacpac
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\bin\Debug\Personkartotek.DB.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\bin\Debug\Personkartotek.DB.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\Personkartotek.DB.sqlprojAssemblyReference.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\Personkartotek.DB.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\Personkartotek.DB.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\Model.xml
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\refactor.xml
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\postdeploy.sql
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\obj\Debug\predeploy.sql

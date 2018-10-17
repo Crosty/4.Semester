@@ -1,0 +1,1 @@
+﻿SELECT TOP 10 PersonId, PersonType, FirstName, MiddleName, LastName FROM Person

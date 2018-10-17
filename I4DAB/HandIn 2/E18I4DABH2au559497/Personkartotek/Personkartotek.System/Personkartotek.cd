@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Personkartotek.System.Models.Person">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAEAAACAAAAAEIAAQAAAAAAAAAAAAABAAIAAAAAg=</HashCode>
+      <FileName>Models\Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Addresses" />
+      <Property Name="ACollection" />
+      <Property Name="Phones" />
+      <Property Name="Emails" />
+      <Property Name="Notes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Personkartotek.System.Models.Address">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAABAAAAAACIAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Address.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Zips" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Personkartotek.System.Models.Phone">
+    <Position X="10.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAARAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Personkartotek.System.Models.Email">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Personkartotek.System.Models.Note">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Personkartotek.System.Models.Zip">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABIAAAAAAAAAAIACAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Zip.cs</FileName>
+      <NewMemberFileName>Models\ZIP.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ZipLists" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Personkartotek.System.Models.ZipList">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAIAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ZipList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Personkartotek.System.Models.AA">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACIAAAAAAAAAEAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Models\AA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

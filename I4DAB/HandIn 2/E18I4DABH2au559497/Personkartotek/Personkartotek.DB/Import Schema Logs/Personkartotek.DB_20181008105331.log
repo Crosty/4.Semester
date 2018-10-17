@@ -1,0 +1,100 @@
+08-10-2018 12:53:31	This log contains information about the import schema operation into project 'Personkartotek.DB' on computer 'STANIE-PC' by user 'Stanie'.
+08-10-2018 12:53:32	Import of database schema has started.
+08-10-2018 12:53:34	Gathering error messages
+08-10-2018 12:53:34	Gathering cryptographic providers
+08-10-2018 12:53:34	Gathering credentials
+08-10-2018 12:53:34	Gathering logins
+08-10-2018 12:53:34	Gathering server roles
+08-10-2018 12:53:34	Gathering server role memberships
+08-10-2018 12:53:34	Gathering linked servers
+08-10-2018 12:53:34	Gathering linked server logins
+08-10-2018 12:53:34	Gathering routes
+08-10-2018 12:53:34	Gathering ddl triggers
+08-10-2018 12:53:34	Gathering encrypted and clr ddl triggers
+08-10-2018 12:53:34	Gathering event notifications
+08-10-2018 12:53:34	Gathering server audits
+08-10-2018 12:53:34	Gathering server audit specifications
+08-10-2018 12:53:34	Gathering event notifications
+08-10-2018 12:53:39	Gathering database credentials
+08-10-2018 12:53:39	Gathering database options
+08-10-2018 12:53:39	Gathering users
+08-10-2018 12:53:39	Gathering roles
+08-10-2018 12:53:39	Gathering application roles
+08-10-2018 12:53:39	Gathering role memberships
+08-10-2018 12:53:39	Gathering filegroups
+08-10-2018 12:53:39	Gathering files
+08-10-2018 12:53:39	Gathering full-text catalogs
+08-10-2018 12:53:39	Gathering assemblies
+08-10-2018 12:53:39	Gathering certificates
+08-10-2018 12:53:39	Gathering asymmetric keys
+08-10-2018 12:53:39	Gathering symmetric keys
+08-10-2018 12:53:39	Gathering encrypted symmetric keys
+08-10-2018 12:53:39	Gathering database encryption keys
+08-10-2018 12:53:39	Gathering schemas
+08-10-2018 12:53:39	Gathering XML schema collections
+08-10-2018 12:53:39	Gathering user-defined data types
+08-10-2018 12:53:39	Gathering user-defined types
+08-10-2018 12:53:39	Gathering table types
+08-10-2018 12:53:39	Gathering unique keys for table types
+08-10-2018 12:53:39	Gathering primary keys for table types
+08-10-2018 12:53:39	Gathering indexes for table types
+08-10-2018 12:53:39	Gathering check constraints for table types
+08-10-2018 12:53:39	Gathering default constraints for table types
+08-10-2018 12:53:39	Gathering partition functions
+08-10-2018 12:53:39	Gathering partition schemes
+08-10-2018 12:53:39	Gathering functions
+08-10-2018 12:53:39	Gathering encrypted functions
+08-10-2018 12:53:39	Gathering aggregates
+08-10-2018 12:53:39	Gathering procedures
+08-10-2018 12:53:39	Gathering encrypted procedures
+08-10-2018 12:53:39	Gathering tables
+08-10-2018 12:53:39	Gathering primary keys
+08-10-2018 12:53:39	Gathering unique constraints
+08-10-2018 12:53:39	Gathering foreign keys
+08-10-2018 12:53:39	Gathering default constraints
+08-10-2018 12:53:39	Gathering check constraints
+08-10-2018 12:53:39	Gathering views
+08-10-2018 12:53:39	Gathering encrypted views
+08-10-2018 12:53:39	Gathering indexes
+08-10-2018 12:53:39	Gathering statistics
+08-10-2018 12:53:39	Gathering full-text index stoplists
+08-10-2018 12:53:39	Gathering search property lists
+08-10-2018 12:53:39	Gathering search properties
+08-10-2018 12:53:39	Gathering full-text indexes
+08-10-2018 12:53:39	Gathering column store indexes
+08-10-2018 12:53:39	Gathering spatial indexes
+08-10-2018 12:53:39	Gathering XML indexes
+08-10-2018 12:53:39	Gathering Selective XML indexes
+08-10-2018 12:53:39	Gathering encrypted triggers
+08-10-2018 12:53:39	Gathering triggers
+08-10-2018 12:53:39	Gathering encrypted and clr ddl triggers
+08-10-2018 12:53:39	Gathering ddl triggers
+08-10-2018 12:53:39	Gathering synonyms
+08-10-2018 12:53:39	Gathering defaults
+08-10-2018 12:53:39	Gathering data constraint uddt bindings
+08-10-2018 12:53:39	Gathering rules
+08-10-2018 12:53:39	Gathering data constraint uddt bindings
+08-10-2018 12:53:39	Gathering message types
+08-10-2018 12:53:39	Gathering queues
+08-10-2018 12:53:39	Gathering contracts
+08-10-2018 12:53:39	Gathering services
+08-10-2018 12:53:39	Gathering routes
+08-10-2018 12:53:39	Gathering event notifications
+08-10-2018 12:53:39	Gathering remote service bindings
+08-10-2018 12:53:40	Gathering broker priorities
+08-10-2018 12:53:40	Gathering database audit specifications
+08-10-2018 12:53:40	Gathering signatures
+08-10-2018 12:53:40	Gathering data compression options
+08-10-2018 12:53:40	Gathering sequence types
+08-10-2018 12:53:40	Gathering security policies
+08-10-2018 12:53:40	Gather column encryption keys
+08-10-2018 12:53:40	Gathering column master keys
+08-10-2018 12:53:40	Gathering external data sources
+08-10-2018 12:53:40	Gathering external file formats
+08-10-2018 12:53:40	Gathering external tables
+08-10-2018 12:53:40	Gathering extended properties
+08-10-2018 12:53:40	Scanning project for duplicate elements
+08-10-2018 12:53:40	Finished duplicate element processing
+08-10-2018 12:53:40	Finished importing database.
+08-10-2018 12:53:40	A summary of the import was saved to the following location: C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\Import Schema Logs\Personkartotek.DB_20181008105331.log
+08-10-2018 12:53:40	Click Finish to continue...

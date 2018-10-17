@@ -1,0 +1,84 @@
+09-10-2018 15:39:25	This log contains information about the import schema operation into project 'Personkartotek.DB' on computer 'STANIE-PC' by user 'Stanie'.
+09-10-2018 15:39:25	Import of database schema has started.
+09-10-2018 15:39:32	Gathering database credentials
+09-10-2018 15:39:32	Gathering database options
+09-10-2018 15:39:32	Gathering users
+09-10-2018 15:39:32	Gathering roles
+09-10-2018 15:39:32	Gathering application roles
+09-10-2018 15:39:32	Gathering role memberships
+09-10-2018 15:39:32	Gathering filegroups
+09-10-2018 15:39:32	Gathering full-text catalogs
+09-10-2018 15:39:32	Gathering assemblies
+09-10-2018 15:39:32	Gathering certificates
+09-10-2018 15:39:32	Gathering asymmetric keys
+09-10-2018 15:39:32	Gathering symmetric keys
+09-10-2018 15:39:32	Gathering encrypted symmetric keys
+09-10-2018 15:39:32	Gathering schemas
+09-10-2018 15:39:32	Gathering XML schema collections
+09-10-2018 15:39:32	Gathering user-defined data types
+09-10-2018 15:39:32	Gathering user-defined types
+09-10-2018 15:39:32	Gathering table types
+09-10-2018 15:39:32	Gathering unique keys for table types
+09-10-2018 15:39:32	Gathering primary keys for table types
+09-10-2018 15:39:32	Gathering indexes for table types
+09-10-2018 15:39:32	Gathering check constraints for table types
+09-10-2018 15:39:32	Gathering default constraints for table types
+09-10-2018 15:39:32	Gathering partition functions
+09-10-2018 15:39:32	Gathering partition schemes
+09-10-2018 15:39:32	Gathering functions
+09-10-2018 15:39:32	Gathering encrypted functions
+09-10-2018 15:39:32	Gathering aggregates
+09-10-2018 15:39:32	Gathering procedures
+09-10-2018 15:39:32	Gathering encrypted procedures
+09-10-2018 15:39:32	Gathering tables
+09-10-2018 15:39:32	Gathering primary keys
+09-10-2018 15:39:32	Gathering unique constraints
+09-10-2018 15:39:32	Gathering foreign keys
+09-10-2018 15:39:32	Gathering default constraints
+09-10-2018 15:39:32	Gathering check constraints
+09-10-2018 15:39:32	Gathering views
+09-10-2018 15:39:32	Gathering encrypted views
+09-10-2018 15:39:32	Gathering indexes
+09-10-2018 15:39:32	Gathering statistics
+09-10-2018 15:39:32	Gathering full-text index stoplists
+09-10-2018 15:39:32	Gathering search property lists
+09-10-2018 15:39:32	Gathering search properties
+09-10-2018 15:39:32	Gathering full-text indexes
+09-10-2018 15:39:32	Gathering column store indexes
+09-10-2018 15:39:32	Gathering spatial indexes
+09-10-2018 15:39:32	Gathering XML indexes
+09-10-2018 15:39:32	Gathering Selective XML indexes
+09-10-2018 15:39:32	Gathering encrypted triggers
+09-10-2018 15:39:32	Gathering triggers
+09-10-2018 15:39:32	Gathering encrypted and clr ddl triggers
+09-10-2018 15:39:33	Gathering ddl triggers
+09-10-2018 15:39:33	Gathering synonyms
+09-10-2018 15:39:33	Gathering defaults
+09-10-2018 15:39:33	Gathering data constraint uddt bindings
+09-10-2018 15:39:33	Gathering rules
+09-10-2018 15:39:33	Gathering data constraint uddt bindings
+09-10-2018 15:39:33	Gathering message types
+09-10-2018 15:39:33	Gathering queues
+09-10-2018 15:39:33	Gathering contracts
+09-10-2018 15:39:33	Gathering services
+09-10-2018 15:39:33	Gathering event notifications
+09-10-2018 15:39:33	Gathering remote service bindings
+09-10-2018 15:39:33	Gathering broker priorities
+09-10-2018 15:39:33	Gathering signatures
+09-10-2018 15:39:33	Gathering data compression options
+09-10-2018 15:39:33	Gathering sequence types
+09-10-2018 15:39:33	Gathering security policies
+09-10-2018 15:39:33	Gather column encryption keys
+09-10-2018 15:39:33	Gathering column master keys
+09-10-2018 15:39:33	Gathering external data sources
+09-10-2018 15:39:33	Gathering external file formats
+09-10-2018 15:39:33	Gathering external tables
+09-10-2018 15:39:33	Gathering extended properties
+09-10-2018 15:39:33	Gathering credentials
+09-10-2018 15:39:33	Gathering logins
+09-10-2018 15:39:33	Gathering server audits
+09-10-2018 15:39:33	Scanning project for duplicate elements
+09-10-2018 15:39:33	Finished duplicate element processing
+09-10-2018 15:39:33	Finished importing database.
+09-10-2018 15:39:33	A summary of the import was saved to the following location: C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.DB\Import Schema Logs\Personkartotek.DB_20181009013925.log
+09-10-2018 15:39:33	Click Finish to continue...

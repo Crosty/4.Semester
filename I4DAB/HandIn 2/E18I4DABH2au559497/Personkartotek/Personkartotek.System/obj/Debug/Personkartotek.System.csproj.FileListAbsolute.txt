@@ -1,0 +1,6 @@
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.System\bin\Debug\Personkartotek.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.System\bin\Debug\Personkartotek.System.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.System\obj\Debug\Personkartotek.System.csprojAssemblyReference.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.System\obj\Debug\Personkartotek.System.csproj.CoreCompileInputs.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.System\obj\Debug\Personkartotek.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek.System\obj\Debug\Personkartotek.System.pdb

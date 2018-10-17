@@ -1,0 +1,12 @@
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\obj\Debug\Personkartotek.Application.csprojAssemblyReference.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\obj\Debug\Personkartotek.Application.csproj.CoreCompileInputs.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.exe.config
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.exe
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.Infrastructure.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.Infrastructure.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\bin\Debug\Personkartotek.System.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\obj\Debug\Personkartotek.Application.csproj.CopyComplete
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\obj\Debug\Personkartotek.exe
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4DAB\HandIn 2\Personkartotek\Personkartotek\obj\Debug\Personkartotek.pdb
