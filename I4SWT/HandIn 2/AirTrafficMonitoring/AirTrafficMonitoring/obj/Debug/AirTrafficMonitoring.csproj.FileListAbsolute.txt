@@ -1,9 +1,0 @@
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\bin\Debug\AirTrafficMonitoring.exe.config
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\bin\Debug\AirTrafficMonitoring.exe
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\bin\Debug\AirTrafficMonitoring.pdb
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\bin\Debug\TransponderReceiver.dll
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\obj\Debug\AirTrafficMonitoring.csprojAssemblyReference.cache
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\obj\Debug\AirTrafficMonitoring.csproj.CoreCompileInputs.cache
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\obj\Debug\AirTrafficMonitoring.csproj.CopyComplete
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\obj\Debug\AirTrafficMonitoring.exe
-C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring\obj\Debug\AirTrafficMonitoring.pdb
