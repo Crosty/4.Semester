@@ -1,0 +1,16 @@
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.csprojAssemblyReference.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.csproj.CoreCompileInputs.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\bin\Debug\AirTrafficMonitoring.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\bin\Debug\AirTrafficMonitoring.System.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\bin\Debug\TransponderReceiver.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.csproj.CopyComplete
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\HandIn 2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\bin\Debug\AirTrafficMonitoring.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\bin\Debug\AirTrafficMonitoring.System.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\bin\Debug\TransponderReceiver.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.csprojAssemblyReference.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.csproj.CoreCompileInputs.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.csproj.CopyComplete
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\HandIn-2\AirTrafficMonitoring\AirTrafficMonitoring.System\obj\Debug\AirTrafficMonitoring.System.pdb

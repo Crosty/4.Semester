@@ -1,0 +1,10 @@
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\bin\Debug\Calculator.Application.exe.config
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\bin\Debug\Calculator.Application.exe
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\bin\Debug\Calculator.Application.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\bin\Debug\Calculator2.dll
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\bin\Debug\Calculator2.pdb
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\obj\Debug\Calculator.Application.csprojAssemblyReference.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\obj\Debug\Calculator.Application.csproj.CoreCompileInputs.cache
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\obj\Debug\Calculator.Application.csproj.CopyComplete
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\obj\Debug\Calculator.Application.exe
+C:\Users\Stanie\Desktop\4. Semester\Noter\I4SWT\Repository\SWTGruppe12Repository\Calculator2\Calculator.Application\obj\Debug\Calculator.Application.pdb
