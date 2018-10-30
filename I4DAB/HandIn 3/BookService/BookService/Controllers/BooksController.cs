@@ -25,7 +25,6 @@ namespace BookService.Controllers
         /// Get a list of all Books
         /// </remarks>
         /// <returns></returns>
-
         public IQueryable<BookDTO> GetBooks()
         {
             var books = from b in db.Books
@@ -57,7 +56,6 @@ namespace BookService.Controllers
         /// </remarks>
         /// <param name="id"></param>
         /// <returns></returns>
-
         [ResponseType(typeof(BookDetailDTO))]
         public async Task<IHttpActionResult> GetBook(int id)
         {
@@ -145,7 +143,7 @@ namespace BookService.Controllers
         /// </remarks>
         /// <param name="book"></param>
         /// <returns></returns>
-        [ResponseType(typeof(Book))]
+        [ResponseType(typeof(BookDTO))]
         public async Task<IHttpActionResult> PostBook(Book book)
         {
             if (!ModelState.IsValid)
@@ -156,8 +154,32 @@ namespace BookService.Controllers
             db.Books.Add(book);
             await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = book.Id }, book);
+            // Load author name
+            db.Entry(book).Reference(x => x.Author).Load();
+
+            var dto = new BookDTO()
+            {
+                Id = book.Id,
+                Title = book.Title,
+                AuthorName = book.Author.Name
+            };
+
+            return CreatedAtRoute("DefaultApi", new {id = book.Id}, dto);
         }
+
+        //[ResponseType(typeof(Book))]
+        //public async Task<IHttpActionResult> PostBook(Book book)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+
+        //    db.Books.Add(book);
+        //    await db.SaveChangesAsync();
+
+        //    return CreatedAtRoute("DefaultApi", new { id = book.Id }, book);
+        //}
 
         // DELETE: api/Books/5
         /// <summary>
