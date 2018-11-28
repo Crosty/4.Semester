@@ -41,11 +41,11 @@ namespace Personkartotek
 
             //Migration
             services.AddDbContext<PersonkartotekDBHandIn32Context>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("PersonkartotekMigration")));
+                options.UseSqlServer(Configuration.GetConnectionString("DABServer")));
 
             //Swagger
             services.AddDbContext<PersonkartotekDBHandIn32Context>(opt =>
-                opt.UseInMemoryDatabase("PersonkartotekMigration"));
+                opt.UseInMemoryDatabase("DABServer"));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
