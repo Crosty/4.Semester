@@ -8,6 +8,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Personkartotek.Interfaces;
+using Personkartotek.Models;
+using Personkartotek.Repositories;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Personkartotek
 {
@@ -30,6 +35,29 @@ namespace Personkartotek
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //First Db
+            //services.AddDbContext<PersonkartotekDBHandIn32Context>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("Personkartotek")));
+
+            //Migration
+            services.AddDbContext<PersonkartotekDBHandIn32Context>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("PersonkartotekMigration")));
+
+            //Swagger
+            services.AddDbContext<PersonkartotekDBHandIn32Context>(opt =>
+                opt.UseInMemoryDatabase("PersonkartotekMigration"));
+
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Personkartotek", Version = "v1" });
+            });
+
+            //Repositories
+            services.AddTransient<IPersonRepo, PersonRepo>();
+
+            //UnitOfWork
+            services.AddTransient<IUnitOfWork, UnitOfWork.UnitOfWork>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -55,6 +83,20 @@ namespace Personkartotek
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //Swagger
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Personkartotek");
+                c.RoutePrefix = string.Empty;
+            });
+
+            app.UseMvc();
         }
     }
 }
