@@ -44,14 +44,6 @@ namespace Personkartotek.Controllers
         /// <summary>
         /// Gets a specified Zip
         /// </summary>
-        /// <remarks>
-        /// Sample request:
-        ///
-        ///     {
-        ///         "zipId": 0
-        ///     }
-        /// 
-        /// </remarks>
         /// <returns>A specified Zip has been shown</returns>
         // GET: api/Zips/5
         [HttpGet("{id}")]
@@ -75,6 +67,18 @@ namespace Personkartotek.Controllers
         /// <summary>
         /// Updates a specified Zip (Creates if it doesn't exist)
         /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     {
+        ///         "zipId": 0,
+        ///         "city": "string",
+        ///         "country": "string",
+        ///         "zipCode": "string",
+        ///         "address": []
+        ///     }
+        /// 
+        /// </remarks>
         /// <returns>A specified Zip has been updated or a Zip has been created</returns>
         // PUT: api/Zips/5
         [HttpPut("{id}")]
@@ -117,7 +121,6 @@ namespace Personkartotek.Controllers
         /// <remarks>
         /// Sample request:
         /// 
-        ///     POST /Zip
         ///     {
         ///         "zipId": 0,
         ///         "city": "string",

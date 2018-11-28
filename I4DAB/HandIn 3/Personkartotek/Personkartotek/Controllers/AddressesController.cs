@@ -20,6 +20,10 @@ namespace Personkartotek.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Gets all the Addresses created
+        /// </summary>
+        /// <returns>A List of Addresses has been shown</returns>
         // GET: api/Addresses
         [HttpGet]
         public IEnumerable<Address> GetAddress()
@@ -27,6 +31,10 @@ namespace Personkartotek.Controllers
             return _context.AddressMigration;
         }
 
+        /// <summary>
+        /// Gets a specified Address
+        /// </summary>
+        /// <returns>A specified Address has been shown</returns>
         // GET: api/Addresses/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAddress([FromRoute] int id)
@@ -46,6 +54,24 @@ namespace Personkartotek.Controllers
             return Ok(address);
         }
 
+        /// <summary>
+        /// Updates a specified Address (Creates if it doesn't exist)
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     {
+        ///         "addressId": 0,
+        ///         "personId": 0,
+        ///         "zipId": 0,
+        ///         "streetName": "string",
+        ///         "houseNumber": "string",
+        ///         "person": ,
+        ///         "zip": ,
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A specified Address has been updated or a Address has been created</returns>
         // PUT: api/Addresses/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAddress([FromRoute] int id, [FromBody] Address address)
@@ -81,6 +107,24 @@ namespace Personkartotek.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Creates an Address
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     {
+        ///         "addressId": 0,
+        ///         "personId": 0,
+        ///         "zipId": 0,
+        ///         "streetName": "string",
+        ///         "houseNumber": "string",
+        ///         "person": ,
+        ///         "zip": ,
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A new Address has been created</returns>
         // POST: api/Addresses
         [HttpPost]
         public async Task<IActionResult> PostAddress([FromBody] Address address)
@@ -96,6 +140,10 @@ namespace Personkartotek.Controllers
             return CreatedAtAction("GetAddress", new { id = address.AddressId }, address);
         }
 
+        /// <summary>
+        /// Deletes a specified Address
+        /// </summary>
+        /// <returns>A specified Address has been deleted</returns>
         // DELETE: api/Addresses/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAddress([FromRoute] int id)
