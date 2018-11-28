@@ -20,6 +20,10 @@ namespace Personkartotek.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Gets all the Emails created
+        /// </summary>
+        /// <returns>A List of Emails has been shown</returns>
         // GET: api/Emails
         [HttpGet]
         public IEnumerable<Email> GetEmail()
@@ -27,6 +31,10 @@ namespace Personkartotek.Controllers
             return _context.EmailMigration;
         }
 
+        /// <summary>
+        /// Gets a specified Email
+        /// </summary>
+        /// <returns>A specified Email has been shown</returns>
         // GET: api/Emails/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetEmail([FromRoute] int id)
@@ -46,6 +54,21 @@ namespace Personkartotek.Controllers
             return Ok(email);
         }
 
+        /// <summary>
+        /// Updates a specified Email (Creates if it doesn't exist)
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     {
+        ///         "emailId": 0,
+        ///         "personId": 0,
+        ///         "emailAddress": "string",
+        ///         "person": ,
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A specified Email has been updated or a Email has been created</returns>
         // PUT: api/Emails/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmail([FromRoute] int id, [FromBody] Email email)
@@ -81,6 +104,21 @@ namespace Personkartotek.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Creates an Email
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     {
+        ///         "emailId": 0,
+        ///         "personId": 0,
+        ///         "emailAddress": "string",
+        ///         "person": ,
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A new Email has been created</returns>
         // POST: api/Emails
         [HttpPost]
         public async Task<IActionResult> PostEmail([FromBody] Email email)
@@ -96,6 +134,10 @@ namespace Personkartotek.Controllers
             return CreatedAtAction("GetEmail", new { id = email.EmailId }, email);
         }
 
+        /// <summary>
+        /// Deletes a specified Email
+        /// </summary>
+        /// <returns>A specified Email has been deleted</returns>
         // DELETE: api/Emails/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmail([FromRoute] int id)
