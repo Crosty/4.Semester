@@ -20,6 +20,10 @@ namespace Personkartotek.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Gets all the People created
+        /// </summary>
+        /// <returns>A List of People has been shown</returns>
         // GET: api/People
         [HttpGet]
         public IEnumerable<Person> GetPerson()
@@ -27,6 +31,10 @@ namespace Personkartotek.Controllers
             return _context.PersonMigration;
         }
 
+        /// <summary>
+        /// Gets a specified Person
+        /// </summary>
+        /// <returns>A specified Person has been shown</returns>
         // GET: api/People/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPerson([FromRoute] int id)
@@ -46,6 +54,24 @@ namespace Personkartotek.Controllers
             return Ok(person);
         }
 
+        /// <summary>
+        /// Updates a specified Person (Creates if it doesn't exist)
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///         "personId": 0,
+        ///         "personType": "string",
+        ///         "firstName": "string",
+        ///         "middleName": "string",
+        ///         "lastName": "string",
+        ///         "address": ,
+        ///         "email": ,
+        ///     }
+        ///     
+        /// </remarks>
+        /// <returns>A specified Person has been updated or a Person has been created</returns>
         // PUT: api/People/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPerson([FromRoute] int id, [FromBody] Person person)
@@ -98,7 +124,7 @@ namespace Personkartotek.Controllers
         ///     }
         ///     
         /// </remarks>
-        /// <returns>A Newly</returns>
+        /// <returns>A new Person has been created</returns>
         // POST: api/People
         [HttpPost]
         public async Task<IActionResult> PostPerson([FromBody] Person person)
@@ -114,6 +140,10 @@ namespace Personkartotek.Controllers
             return CreatedAtAction("GetPerson", new { id = person.PersonId }, person);
         }
 
+        /// <summary>
+        /// Deletes a specified Person
+        /// </summary>
+        /// <returns>A specified Person has been deleted</returns>
         // DELETE: api/People/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePerson([FromRoute] int id)
