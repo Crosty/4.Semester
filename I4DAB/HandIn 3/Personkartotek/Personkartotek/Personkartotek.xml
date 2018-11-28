@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Personkartotek</name>
+    </assembly>
+    <members>
+        <member name="M:Personkartotek.Controllers.PeopleAppController.Create(Personkartotek.Models.Person)">
+             <summary>
+             Creates a person
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "personId": 0,
+                     "personType": "string",
+                     "firstName": "string",
+                     "middleName": "string",
+                     "lastName": "string",
+                     "address": ,
+                     "email": ,
+                 }
+                 
+             </remarks>
+             <returns>A Newly</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.PeopleController.PostPerson(Personkartotek.Models.Person)">
+             <summary>
+             Creates a person
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "personId": 0,
+                     "personType": "string",
+                     "firstName": "string",
+                     "middleName": "string",
+                     "lastName": "string",
+                     "address": ,
+                     "email": ,
+                 }
+                 
+             </remarks>
+             <returns>A Newly</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.ZipsController.PostZip(Personkartotek.Models.Zip)">
+            <summary>
+            Creates a Zip
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /Zip
+                {
+                    "zipId": 0,
+                    "city": "string",
+                    "country": "string",
+                    "zipCode": "string",
+                    address: []
+                }
+            
+            </remarks>
+            <param name="zip"></param>
+            <returns>A new Zip has been created</returns>
+        </member>
+    </members>
+</doc>

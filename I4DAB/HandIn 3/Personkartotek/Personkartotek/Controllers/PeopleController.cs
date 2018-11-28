@@ -81,6 +81,24 @@ namespace Personkartotek.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Creates a person
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///         "personId": 0,
+        ///         "personType": "string",
+        ///         "firstName": "string",
+        ///         "middleName": "string",
+        ///         "lastName": "string",
+        ///         "address": ,
+        ///         "email": ,
+        ///     }
+        ///     
+        /// </remarks>
+        /// <returns>A Newly</returns>
         // POST: api/People
         [HttpPost]
         public async Task<IActionResult> PostPerson([FromBody] Person person)
