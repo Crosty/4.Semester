@@ -19,7 +19,21 @@ namespace Personkartotek.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Gets all the Zips created
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///         "zipId": 0,
+        ///         "city": "string",
+        ///         "country": "string",
+        ///         "zipCode": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A List of Zips has been shown</returns>
         // GET: api/Zips
         [HttpGet]
         public IEnumerable<Zip> GetZip()
@@ -27,6 +41,18 @@ namespace Personkartotek.Controllers
             return _context.ZipMigration;
         }
 
+        /// <summary>
+        /// Gets a specified Zip
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///         "zipId": 0
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A specified Zip has been shown</returns>
         // GET: api/Zips/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetZip([FromRoute] int id)
@@ -46,6 +72,21 @@ namespace Personkartotek.Controllers
             return Ok(zip);
         }
 
+        /// <summary>
+        /// Updates a specified Zip (Creates if it doesn't exist)
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///         "zipId": 0,
+        ///         "city": "string",
+        ///         "country": "string",
+        ///         "zipCode": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A specified Zip has been updated or a Zip has been created</returns>
         // PUT: api/Zips/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutZip([FromRoute] int id, [FromBody] Zip zip)
@@ -93,7 +134,7 @@ namespace Personkartotek.Controllers
         ///         "city": "string",
         ///         "country": "string",
         ///         "zipCode": "string",
-        ///         address: []
+        ///         "address": []
         ///     }
         /// 
         /// </remarks>
@@ -114,6 +155,18 @@ namespace Personkartotek.Controllers
             return CreatedAtAction("GetZip", new { id = zip.ZipId }, zip);
         }
 
+        /// <summary>
+        /// Deletes a specified Zip
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///         "zipId": 0,
+        ///     }
+        /// 
+        /// </remarks>
+        /// <returns>A specified Zip has been deleted</returns>
         // DELETE: api/Zips/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteZip([FromRoute] int id)

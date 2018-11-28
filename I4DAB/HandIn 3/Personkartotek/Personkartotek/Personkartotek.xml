@@ -44,6 +44,54 @@
              </remarks>
              <returns>A Newly</returns>
         </member>
+        <member name="M:Personkartotek.Controllers.ZipsController.GetZip">
+             <summary>
+             Gets all the Zips created
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "zipId": 0,
+                     "city": "string",
+                     "country": "string",
+                     "zipCode": "string"
+                 }
+             
+             </remarks>
+             <returns>A List of Zips has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.ZipsController.GetZip(System.Int32)">
+             <summary>
+             Gets a specified Zip
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "zipId": 0
+                 }
+             
+             </remarks>
+             <returns>A specified Zip has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.ZipsController.PutZip(System.Int32,Personkartotek.Models.Zip)">
+             <summary>
+             Updates a specified Zip (Creates if it doesn't exist)
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "zipId": 0,
+                     "city": "string",
+                     "country": "string",
+                     "zipCode": "string"
+                 }
+             
+             </remarks>
+             <returns>A specified Zip has been updated or a Zip has been created</returns>
+        </member>
         <member name="M:Personkartotek.Controllers.ZipsController.PostZip(Personkartotek.Models.Zip)">
             <summary>
             Creates a Zip
@@ -57,12 +105,26 @@
                     "city": "string",
                     "country": "string",
                     "zipCode": "string",
-                    address: []
+                    "address": []
                 }
             
             </remarks>
             <param name="zip"></param>
             <returns>A new Zip has been created</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.ZipsController.DeleteZip(System.Int32)">
+             <summary>
+             Deletes a specified Zip
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "zipId": 0,
+                 }
+             
+             </remarks>
+             <returns>A specified Zip has been deleted</returns>
         </member>
     </members>
 </doc>
