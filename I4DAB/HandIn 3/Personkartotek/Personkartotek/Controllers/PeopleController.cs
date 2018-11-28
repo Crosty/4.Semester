@@ -108,7 +108,7 @@ namespace Personkartotek.Controllers
         }
 
         /// <summary>
-        /// Creates a person
+        /// Creates a Person
         /// </summary>
         /// <remarks>
         /// Sample request:

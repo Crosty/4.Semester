@@ -4,6 +4,116 @@
         <name>Personkartotek</name>
     </assembly>
     <members>
+        <member name="M:Personkartotek.Controllers.AddressesController.GetAddress">
+            <summary>
+            Gets all the Addresses created
+            </summary>
+            <returns>A List of Addresses has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.AddressesController.GetAddress(System.Int32)">
+            <summary>
+            Gets a specified Address
+            </summary>
+            <returns>A specified Address has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.AddressesController.PutAddress(System.Int32,Personkartotek.Models.Address)">
+            <summary>
+            Updates a specified Address (Creates if it doesn't exist)
+            </summary>
+            <remarks>
+            Sample request:
+            
+                {
+                    "addressId": 0,
+                    "personId": 0,
+                    "zipId": 0,
+                    "streetName": "string",
+                    "houseNumber": "string",
+                    "person": ,
+                    "zip": ,
+                }
+            
+            </remarks>
+            <returns>A specified Address has been updated or a Address has been created</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.AddressesController.PostAddress(Personkartotek.Models.Address)">
+            <summary>
+            Creates an Address
+            </summary>
+            <remarks>
+            Sample request:
+            
+                {
+                    "addressId": 0,
+                    "personId": 0,
+                    "zipId": 0,
+                    "streetName": "string",
+                    "houseNumber": "string",
+                    "person": ,
+                    "zip": ,
+                }
+            
+            </remarks>
+            <returns>A new Address has been created</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.AddressesController.DeleteAddress(System.Int32)">
+            <summary>
+            Deletes a specified Address
+            </summary>
+            <returns>A specified Address has been deleted</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.EmailsController.GetEmail">
+            <summary>
+            Gets all the Emails created
+            </summary>
+            <returns>A List of Emails has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.EmailsController.GetEmail(System.Int32)">
+            <summary>
+            Gets a specified Email
+            </summary>
+            <returns>A specified Email has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.EmailsController.PutEmail(System.Int32,Personkartotek.Models.Email)">
+            <summary>
+            Updates a specified Email (Creates if it doesn't exist)
+            </summary>
+            <remarks>
+            Sample request:
+            
+                {
+                    "emailId": 0,
+                    "personId": 0,
+                    "emailAddress": "string",
+                    "person": ,
+                }
+            
+            </remarks>
+            <returns>A specified Email has been updated or a Email has been created</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.EmailsController.PostEmail(Personkartotek.Models.Email)">
+            <summary>
+            Creates an Email
+            </summary>
+            <remarks>
+            Sample request:
+            
+                {
+                    "emailId": 0,
+                    "personId": 0,
+                    "emailAddress": "string",
+                    "person": ,
+                }
+            
+            </remarks>
+            <returns>A new Email has been created</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.EmailsController.DeleteEmail(System.Int32)">
+            <summary>
+            Deletes a specified Email
+            </summary>
+            <returns>A specified Email has been deleted</returns>
+        </member>
         <member name="M:Personkartotek.Controllers.PeopleAppController.Create(Personkartotek.Models.Person)">
              <summary>
              Creates a person
@@ -24,6 +134,38 @@
              </remarks>
              <returns>A Newly</returns>
         </member>
+        <member name="M:Personkartotek.Controllers.PeopleController.GetPerson">
+            <summary>
+            Gets all the People created
+            </summary>
+            <returns>A List of People has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.PeopleController.GetPerson(System.Int32)">
+            <summary>
+            Gets a specified Person
+            </summary>
+            <returns>A specified Person has been shown</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.PeopleController.PutPerson(System.Int32,Personkartotek.Models.Person)">
+             <summary>
+             Updates a specified Person (Creates if it doesn't exist)
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 {
+                     "personId": 0,
+                     "personType": "string",
+                     "firstName": "string",
+                     "middleName": "string",
+                     "lastName": "string",
+                     "address": ,
+                     "email": ,
+                 }
+                 
+             </remarks>
+             <returns>A specified Person has been updated or a Person has been created</returns>
+        </member>
         <member name="M:Personkartotek.Controllers.PeopleController.PostPerson(Personkartotek.Models.Person)">
              <summary>
              Creates a person
@@ -42,7 +184,13 @@
                  }
                  
              </remarks>
-             <returns>A Newly</returns>
+             <returns>A new Person has been created</returns>
+        </member>
+        <member name="M:Personkartotek.Controllers.PeopleController.DeletePerson(System.Int32)">
+            <summary>
+            Deletes a specified Person
+            </summary>
+            <returns>A specified Person has been deleted</returns>
         </member>
         <member name="M:Personkartotek.Controllers.ZipsController.GetZip">
              <summary>
@@ -62,35 +210,28 @@
              <returns>A List of Zips has been shown</returns>
         </member>
         <member name="M:Personkartotek.Controllers.ZipsController.GetZip(System.Int32)">
-             <summary>
-             Gets a specified Zip
-             </summary>
-             <remarks>
-             Sample request:
-            
-                 {
-                     "zipId": 0
-                 }
-             
-             </remarks>
-             <returns>A specified Zip has been shown</returns>
+            <summary>
+            Gets a specified Zip
+            </summary>
+            <returns>A specified Zip has been shown</returns>
         </member>
         <member name="M:Personkartotek.Controllers.ZipsController.PutZip(System.Int32,Personkartotek.Models.Zip)">
-             <summary>
-             Updates a specified Zip (Creates if it doesn't exist)
-             </summary>
-             <remarks>
-             Sample request:
+            <summary>
+            Updates a specified Zip (Creates if it doesn't exist)
+            </summary>
+            <remarks>
+            Sample request:
             
-                 {
-                     "zipId": 0,
-                     "city": "string",
-                     "country": "string",
-                     "zipCode": "string"
-                 }
-             
-             </remarks>
-             <returns>A specified Zip has been updated or a Zip has been created</returns>
+                {
+                    "zipId": 0,
+                    "city": "string",
+                    "country": "string",
+                    "zipCode": "string",
+                    "address": []
+                }
+            
+            </remarks>
+            <returns>A specified Zip has been updated or a Zip has been created</returns>
         </member>
         <member name="M:Personkartotek.Controllers.ZipsController.PostZip(Personkartotek.Models.Zip)">
             <summary>
@@ -99,7 +240,6 @@
             <remarks>
             Sample request:
             
-                POST /Zip
                 {
                     "zipId": 0,
                     "city": "string",
@@ -113,18 +253,10 @@
             <returns>A new Zip has been created</returns>
         </member>
         <member name="M:Personkartotek.Controllers.ZipsController.DeleteZip(System.Int32)">
-             <summary>
-             Deletes a specified Zip
-             </summary>
-             <remarks>
-             Sample request:
-            
-                 {
-                     "zipId": 0,
-                 }
-             
-             </remarks>
-             <returns>A specified Zip has been deleted</returns>
+            <summary>
+            Deletes a specified Zip
+            </summary>
+            <returns>A specified Zip has been deleted</returns>
         </member>
     </members>
 </doc>
