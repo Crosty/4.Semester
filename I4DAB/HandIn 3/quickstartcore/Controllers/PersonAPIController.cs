@@ -95,13 +95,9 @@ namespace quickstartcore.Controllers
                 return BadRequest();
             }
 
-            Person person = await _repository.GetItemAsync(id);
-            if (person == null)
-            {
-                return NotFound();
-            }
+            await _repository.DeleteItemAsync(id);
 
-            return Ok(person);
+            return Ok(id);
         }
     }
 }
