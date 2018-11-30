@@ -42,6 +42,10 @@ namespace Personkartotek
             //options.UseSqlServer(Configuration.GetConnectionString("Personkartotek")));
 
             //Migration
+            //services.AddDbContext<PersonkartotekDBHandIn32Context>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("PersonkartotekMigration")));
+
+            //DabServer
             services.AddDbContext<PersonkartotekDBHandIn32Context>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DABServer")));
 
