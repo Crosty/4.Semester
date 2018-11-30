@@ -1,0 +1,32 @@
+{
+  "personId": 0,
+  "personType": "string",
+  "firstName": "string",
+  "middleName": "string",
+  "lastName": "string",
+  "address": [
+    {
+      "addressId": 0,
+      "personId": 0,
+      "zipId": 0,
+      "streetName": "string",
+      "houseNumber": "string",
+      "zip": {
+        "zipId": 0,
+        "city": "string",
+        "country": "string",
+        "zipCode": "string",
+        "address": [
+          null
+        ]
+      }
+    }
+  ],
+  "email": [
+    {
+      "emailId": 0,
+      "personId": 0,
+      "emailAddress": "string"
+    }
+  ]
+}

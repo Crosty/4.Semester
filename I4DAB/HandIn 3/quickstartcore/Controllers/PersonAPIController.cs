@@ -18,12 +18,14 @@ namespace quickstartcore.Controllers
         {
             this._repository = repository;
         }
+
         // GET: api/PersonAPI
         [HttpGet]
         public async Task<IEnumerable<Person>> Get()
         {
-            var items = await _repository.GetItemsAsync();
-            return items;
+            var people = await _repository.GetItemsAsync();
+
+            return people;
         }
 
         // GET: api/PersonAPI/5
@@ -46,13 +48,13 @@ namespace quickstartcore.Controllers
 
         // POST: api/PersonAPI
         [HttpPost]
-        public async Task<ActionResult> Post([Bind("PersonId,PersonType,FirstName,MiddleName,LastName, Address, Email")] Person person)
+        public async Task<ActionResult> Post([Bind("Id, PersonType, FirstName, MiddleName, LastName, Address, Email")] Person person)
         {
 
             if (ModelState.IsValid)
             {
                 var newPerson = await _repository.CreateItemAsync(person);
-                return Ok((Person)(dynamic)newPerson);
+                return Ok((Person) (dynamic) newPerson);
             }
 
             return View(person);
@@ -66,7 +68,7 @@ namespace quickstartcore.Controllers
             {
                 return BadRequest(ModelState);
             }
-            if (id != person.PersonId)
+            if (id != person.Id)
             {
                 return BadRequest();
             }
@@ -78,10 +80,6 @@ namespace quickstartcore.Controllers
             {
                 if (de.StatusCode == System.Net.HttpStatusCode.NotFound)
                     return NotFound();
-                else throw;
-            }
-            catch (Exception)
-            {
                 throw;
             }
 

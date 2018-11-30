@@ -33,7 +33,7 @@ namespace quickstartcore
             // Add framework services.
             services.AddMvc();
             // Add Respository as Sinelton
-            services.AddSingleton<IDocumentDBRepository<Person>>(new DocumentDBRepository<Person>());
+            services.AddSingleton<IDocumentDBRepository<Person>>(new DocumentDbRepository<Person>());
             // Swagger
             services.AddSwaggerGen(c =>
             {
@@ -78,7 +78,7 @@ namespace quickstartcore
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Person}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

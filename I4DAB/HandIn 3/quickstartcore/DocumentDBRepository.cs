@@ -4,31 +4,23 @@ using System.Threading.Tasks;
 using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Documents.Linq;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace quickstartcore
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Linq.Expressions;
-    using System.Threading.Tasks;
-    using Microsoft.Azure.Documents;
-    using Microsoft.Azure.Documents.Client;
-    using Microsoft.Azure.Documents.Linq;
-
-    
-    public class DocumentDBRepository<T> : IDocumentDBRepository<T> where T : class
+    public class DocumentDbRepository<T> : IDocumentDBRepository<T> where T : class
     {
        
         private readonly string Endpoint = "https://localhost:8081/";
         private readonly string Key = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
         private readonly string DatabaseId = "Personkartotek";
         private readonly string CollectionId = "People";
-        private readonly DocumentClient _client;
+        private DocumentClient client;
 
-        public DocumentDBRepository()
+        public DocumentDbRepository()
         {
-            this._client = new DocumentClient(new Uri(Endpoint), Key);
+            this.client = new DocumentClient(new Uri(Endpoint), Key);
             CreateDatabaseIfNotExistsAsync().Wait();
             CreateCollectionIfNotExistsAsync().Wait();
         }
@@ -37,7 +29,7 @@ namespace quickstartcore
         {
             try
             {
-                Document document = await _client.ReadDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
+                Document document = await client.ReadDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
                 return (T)(dynamic)document;
             }
             catch (DocumentClientException e)
@@ -55,9 +47,9 @@ namespace quickstartcore
 
         public async Task<IEnumerable<T>> GetItemsAsync()
         {
-            IDocumentQuery<T> query = _client.CreateDocumentQuery<T>(
-                UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId),
-                new FeedOptions { MaxItemCount = -1 })
+            IDocumentQuery<T> query = client.CreateDocumentQuery<T>(
+                    UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId),
+                    new FeedOptions { MaxItemCount = -1 })
                 .AsDocumentQuery();
 
             List<T> results = new List<T>();
@@ -71,30 +63,30 @@ namespace quickstartcore
 
         public async Task<Document> CreateItemAsync(T item)
         {
-            return await _client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId), item);
+            return await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId), item);
         }
 
         public async Task<Document> UpdateItemAsync(string id, T item)
         {
-            return await _client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id), item);
+            return await client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id), item);
         }
 
         public async Task DeleteItemAsync(string id)
         {
-            await _client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
+            await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
         }
 
         private async Task CreateDatabaseIfNotExistsAsync()
         {
             try
             {
-                await _client.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
+                await client.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
             }
             catch (DocumentClientException e)
             {
                 if (e.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    await _client.CreateDatabaseAsync(new Database { Id = DatabaseId });
+                    await client.CreateDatabaseAsync(new Database { Id = DatabaseId });
                 }
                 else
                 {
@@ -107,13 +99,13 @@ namespace quickstartcore
         {
             try
             {
-                await _client.ReadDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId));
+                await client.ReadDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId));
             }
             catch (DocumentClientException e)
             {
                 if (e.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    await _client.CreateDocumentCollectionAsync(
+                    await client.CreateDocumentCollectionAsync(
                         UriFactory.CreateDatabaseUri(DatabaseId),
                         new DocumentCollection { Id = CollectionId },
                         new RequestOptions { OfferThroughput = 1000 });

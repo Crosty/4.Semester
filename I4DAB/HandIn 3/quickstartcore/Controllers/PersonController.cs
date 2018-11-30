@@ -1,5 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using quickstartcore.Models;
 
 namespace quickstartcore.Controllers
@@ -31,7 +35,7 @@ namespace quickstartcore.Controllers
         [HttpPost]
         [ActionName("Create")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> CreateAsync([Bind("PersonId,PersonType,FirstName,MiddleName,LastName, Address, Email")] Person item)
+        public async Task<ActionResult> CreateAsync([Bind("personId, PersonType, FirstName, MiddleName, LastName, Address, Email")] Person item)
         {
             if (ModelState.IsValid)
             {
@@ -45,11 +49,11 @@ namespace quickstartcore.Controllers
         [HttpPost]
         [ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> EditAsync([Bind("PersonId,PersonType,FirstName,MiddleName,LastName, Address, Email")] Person item)
+        public async Task<ActionResult> EditAsync([Bind("Id, PersonType, FirstName, MiddleName, LastName, Address, Email")] Person item)
         {
             if (ModelState.IsValid)
             {
-                await _repository.UpdateItemAsync(item.PersonId, item);
+                await _repository.UpdateItemAsync(item.Id, item);
                 return RedirectToAction("Index");
             }
 
@@ -93,7 +97,7 @@ namespace quickstartcore.Controllers
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmedAsync([Bind("PersonId")] string id)
+        public async Task<ActionResult> DeleteConfirmedAsync([Bind("Id")] string id)
         {
             await _repository.DeleteItemAsync(id);
             return RedirectToAction("Index");
