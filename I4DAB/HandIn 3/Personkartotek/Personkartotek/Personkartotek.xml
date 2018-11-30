@@ -168,7 +168,7 @@
         </member>
         <member name="M:Personkartotek.Controllers.PeopleController.PostPerson(Personkartotek.Models.Person)">
              <summary>
-             Creates a person
+             Creates a Person
              </summary>
              <remarks>
              Sample request:
