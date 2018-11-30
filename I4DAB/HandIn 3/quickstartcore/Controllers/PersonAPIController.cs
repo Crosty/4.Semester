@@ -46,7 +46,7 @@ namespace quickstartcore.Controllers
 
         // POST: api/PersonAPI
         [HttpPost]
-        public async Task<ActionResult> Post([Bind("PersonId,PersonType,FirstName,MiddleName,LastName")] Person person)
+        public async Task<ActionResult> Post([Bind("PersonId,PersonType,FirstName,MiddleName,LastName, Address, Email")] Person person)
         {
 
             if (ModelState.IsValid)

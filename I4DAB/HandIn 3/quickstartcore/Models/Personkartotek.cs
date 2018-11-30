@@ -19,20 +19,22 @@ namespace quickstartcore.Models
         [JsonProperty(PropertyName = "lastName", Required = Required.Always)]
         public string LastName { get; set; }
 
-        //[JsonProperty(PropertyName = "address", Required = Required.AllowNull)]
-        //public Address[] Address { get; set; }
-        //[JsonProperty(PropertyName = "email", Required = Required.AllowNull)]
-        //public Email[] Email { get; set; }
+        [JsonProperty(PropertyName = "address", Required = Required.AllowNull)]
+        public Address Address { get; set; }
+        [JsonProperty(PropertyName = "email", Required = Required.AllowNull)]
+        public Email Email { get; set; }
     }
 
     public class Address
     {
         [JsonProperty(PropertyName = "addressId", Required = Required.Always)]
         public string AddressId { get; set; }
-        [JsonProperty(PropertyName = "personId", Required = Required.Always)]
-        public string PersonId { get; set; }
-        [JsonProperty(PropertyName = "zipId", Required = Required.Always)]
-        public string ZipId { get; set; }
+
+        //[JsonProperty(PropertyName = "personId", Required = Required.Always)]
+        //public string PersonId { get; set; }
+        //[JsonProperty(PropertyName = "zipId", Required = Required.Always)]
+        //public string ZipId { get; set; }
+
         [JsonProperty(PropertyName = "streetName", Required = Required.Always)]
         public string StreetName { get; set; }
         [JsonProperty(PropertyName = "houseNumber", Required = Required.Always)]
@@ -40,16 +42,18 @@ namespace quickstartcore.Models
 
         //[JsonProperty(PropertyName = "person", Required = Required.AllowNull)]
         //public Person Person { get; set; }
-        //[JsonProperty(PropertyName = "zip", Required = Required.AllowNull)]
-        //public Zip Zip { get; set; }
+        [JsonProperty(PropertyName = "zip", Required = Required.AllowNull)]
+        public Zip Zip { get; set; }
     }
 
     public class Email
     {
         [JsonProperty(PropertyName = "emailId", Required = Required.Always)]
         public string EmailId { get; set; }
-        [JsonProperty(PropertyName = "personId", Required = Required.Always)]
-        public string PersonId { get; set; }
+
+        //[JsonProperty(PropertyName = "personId", Required = Required.Always)]
+        //public string PersonId { get; set; }
+
         [JsonProperty(PropertyName = "emailAddress", Required = Required.Always)]
         public string EmailAddress { get; set; }
     }

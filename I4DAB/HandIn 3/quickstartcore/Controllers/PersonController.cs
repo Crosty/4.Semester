@@ -31,7 +31,7 @@ namespace quickstartcore.Controllers
         [HttpPost]
         [ActionName("Create")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> CreateAsync([Bind("PersonId,PersonType,FirstName,MiddleName,LastName")] Person item)
+        public async Task<ActionResult> CreateAsync([Bind("PersonId,PersonType,FirstName,MiddleName,LastName, Address, Email")] Person item)
         {
             if (ModelState.IsValid)
             {
